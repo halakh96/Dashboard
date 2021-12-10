@@ -8,7 +8,7 @@ const myAreaChart = new Chart(ordersChart, {
         labels: ['Aug1', 'Aug3', 'Aug5', 'Aug7', 'Aug9', 'Aug11','Aug13'],
         datasets: [{
             label: '# of Votes',
-            data: [0.8, 2.5, 2,3.2, 3.3,2,4],
+            data: [8000, 25000, 20000,32000, 30000,20000,40000],
             backgroundColor: 'rgba(55, 49, 94,0.7)',
             borderColor: 'rgb(218, 65, 103)',
             borderWidth: 2,
@@ -16,12 +16,21 @@ const myAreaChart = new Chart(ordersChart, {
             fill:true
         }]
     },
+
     options: {
+        plugins:{
+        legend:{
+            display:false
+        }},
         scales: {
           
              y: {
                 beginAtZero: true,
-             },
+                max:40000,
+                min:0,
+                ticks:{stepSize:10000},
+               
+             }
            
         }
     }
@@ -35,16 +44,24 @@ var visitorChart = document.getElementById('myBarChart').getContext('2d');
           data: {
             labels: ["Jan", "Feb", "Mar", "April", "May", "June"],
             datasets: [{ 
-                data: [400,400,1400,500,700,1000,1200],
+                data: [4000,4500,13500,5000,7000,10000,12000],
                 label: "Men",
                 backgroundColor: 'rgb(55, 49, 94)',
               }, { 
-                data: [600,600,1500,700,1000,1300,1400],
+                data: [6000,6000,15000,7000,10000,13000,14000],
                 label: "Women",
                 backgroundColor: 'rgb(218, 65, 103)',
               }
             ]
           },
+          options:{
+            scales:{
+            y:{
+              max:15000,
+              min:0,
+              ticks:{stepSize:5000}
+            }
+          }}
         });
 
 
@@ -96,10 +113,18 @@ const myLinearChart = new Chart(ratChart, {
         }]
     },
     options: {
+        plugins:{
+            legend:{
+                display:false
+            }
+        },
         scales: {
             
             y: {
                 beginAtZero: true,
+                max:5,
+                min:0,
+                ticks:{stepSize:1}
             },
             
            

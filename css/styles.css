@@ -1,3 +1,4 @@
+
 .bg-purple {
   color: white!important;
   background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
@@ -8,3 +9,12 @@
   background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
   color: white!important;
 }
+
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover{
+background-color: #ffffff26;
+
+}
+
