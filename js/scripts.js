@@ -16,5 +16,6 @@ $('#myTable').DataTable({
     ]
 })
 
+
 });
 
