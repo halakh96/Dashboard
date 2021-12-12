@@ -18,6 +18,8 @@ const myAreaChart = new Chart(ordersChart, {
     },
 
     options: {
+      responsive: true,
+
         plugins:{
         legend:{
             display:false
@@ -55,6 +57,8 @@ var visitorChart = document.getElementById('myBarChart').getContext('2d');
             ]
           },
           options:{
+            responsive: true,
+
             scales:{
             y:{
               max:15000,
@@ -84,6 +88,7 @@ var myPieChart = new Chart(citiesChart, {
           }]
       },
     options: {
+      responsive: true,
       scales: {
         xAxes: [{ 
            display: false,
@@ -113,6 +118,7 @@ const myLinearChart = new Chart(ratChart, {
         }]
     },
     options: {
+      responsive: true,
         plugins:{
             legend:{
                 display:false

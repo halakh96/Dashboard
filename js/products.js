@@ -58,3 +58,13 @@ const products = [
 ];
 
 
+
+document.getElementById('productsPage').innerHTML = products.map(product => 
+  `<div>
+    <div "> ${product.image}</div>
+    <div> ${product.name}</div>
+    <div> ${product.description}</div>
+    <div> ${product.price}</div>
+    <div> ${product.status}</div>
+  </div>`
+  ).join('')
