@@ -88,7 +88,7 @@ var myPieChart = new Chart(citiesChart, {
           }]
       },
     options: {
-      responsive: true,
+      maintainAspectRatio:false,
       scales: {
         xAxes: [{ 
            display: false,
