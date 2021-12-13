@@ -9,9 +9,9 @@ const myAreaChart = new Chart(ordersChart, {
         datasets: [{
             label: '# of Votes',
             data: [8000, 25000, 20000,32000, 30000,20000,40000],
-            backgroundColor: 'rgba(55, 49, 94,0.7)',
-            borderColor: 'rgb(218, 65, 103)',
-            borderWidth: 2,
+            backgroundColor: 'rgba(24, 29, 49,0.6)',
+            borderColor: 'rgb(103, 137, 131)',
+            borderWidth: 3,
             tension:0.3,
             fill:true
         }]
@@ -48,11 +48,11 @@ var visitorChart = document.getElementById('myBarChart').getContext('2d');
             datasets: [{ 
                 data: [4000,4500,13500,5000,7000,10000,12000],
                 label: "Men",
-                backgroundColor: 'rgb(55, 49, 94)',
+                backgroundColor: 'rgba(24, 29, 49)',
               }, { 
                 data: [6000,6000,15000,7000,10000,13000,14000],
                 label: "Women",
-                backgroundColor: 'rgb(218, 65, 103)',
+                backgroundColor:  'rgb(103, 137, 131)',
               }
             ]
           },
@@ -78,10 +78,10 @@ var myPieChart = new Chart(citiesChart, {
         datasets: [{ 
             data: [40,20,10,30],
             backgroundColor: [
-                "rgb(220, 92, 124)",
-              "rgb(55, 49, 94)",
-              "rgb(218, 65, 103)",
-              "rgb(64, 29, 186)"
+              'rgb(24, 29, 49)',
+              'rgb(103, 137, 131)',
+              'rgba(29, 34, 53,0.8)',
+              'rgba(125, 167, 159,0.8)'
             ],
             borderWidth:2,
             borderColor:"white"
@@ -103,8 +103,8 @@ const myLinearChart = new Chart(ratChart, {
         datasets: [{
             label: '# of Votes',
             data: [1,1.5,2.5,4,5,3],
-            backgroundColor: 'rgba(55, 49, 94,0.2)',
-            borderColor: 'rgb(218, 65, 103)',
+            backgroundColor: 'rgba(24, 29, 49,0.2)',
+            borderColor: 'rgb(103, 137, 131)',
             borderWidth: 2,
             tension:0.5,
             fill:true

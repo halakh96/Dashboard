@@ -70,8 +70,8 @@ document.getElementById('productsPage').innerHTML = products.map(product =>
 <div class="col-md-3 col-12">
      <h5>${product.price}SAR </h5>
     <p class="text-success">${product.status}</p>
-  <a href="#" class="btn bg-purple w-100 mt-2">Details</a>
-  <a href="#" class="btn bg-pink w-100 mt-2">Details</a>
+  <a href="#" class="btn bg-darkBlue w-100 mt-2">Details</a>
+  <a href="#" class="btn bg-gumbo w-100 mt-2">Details</a>
 </div>
     </div>
 </div>`

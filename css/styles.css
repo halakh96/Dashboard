@@ -1,12 +1,13 @@
 
-.bg-purple {
+.bg-darkBlue {
   color: white!important;
-  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+  background: #181D31!important;
+  
 }
 
-.bg-pink {
-  border-color: #da4167!important;
-  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+.bg-gumbo {
+  border-color: #678983!important;
+  background: #678983!important;
   color: white!important;
 }
 

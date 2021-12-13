@@ -12,24 +12,25 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-                         <!--top Navbar-->
-    <nav class="navbar navbar-dark bg-purple sticky-top ">
+  
+    <!--top Navbar-->
+    <nav class="navbar navbar-dark bg-darkBlue fixed-top ">
       <div class="container-fluid">
-           <a class="navbar-brand " href="index.html">Nrt Solution</a>
+           <a class="navbar-brand " href="index.html">Hala Khaled</a>
             <!-- Sidebar Toggle Icon-->
-       <button class="navbar-toggler " id="sidebarToggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarContent" aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler border-0 " id="sidebarToggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarContent" aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
      
             
           <form class="d-flex ms-auto input-group w-25">
             <input class="form-control " type="search" placeholder="Search for.." aria-label="Search">
-            <span class=" input-group-text bg-pink" type="submit"><i class="fas fa-search"></i>
+            <span class=" input-group-text bg-gumbo" type="submit"><i class="fas fa-search"></i>
             </span>
           </form>
 
           <div class="dropdown ">
-            <button class="btn text-white dropdown-toggle "
+            <button class="btn text-white dropdown-toggle  "
                     type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fas fa-user"></i>
             </button>
@@ -46,48 +47,35 @@
    
 
              <!--Sidebar-->
-    <ul class="nav flex-column bg-purple min-vh-100 w-25 collapse float-start sticky-top " id="sidebarContent">
+    <ul class="nav flex-column bg-darkBlue vh-100 collapse float-start sticky-top pt-5"  id="sidebarContent">
       <div class="nav-item mt-5 m-2">
-        <a class="nav-link active text-white text-muted" href="/index.html"> <i class="fas fa-home"></i>  Home</a>
+        <a class="nav-link active text-white text-muted" title="Home" href="/index.html"> <i class="fas fa-home fa-2x"></i> </a>
       </div>
       <div class="nav-item m-2">
-        <a class="nav-link text-white text-muted" href="/products.html"><i class="fas fa-tshirt"></i> Products</a>
+        <a class="nav-link text-white text-muted" title="Products"href="/products.html"><i class="fas fa-tshirt fa-2x"></i></a>
       </div>
 
-      <div class=" dropend m-2">
-        <a class="nav-link text-white text-muted dropdown-toggle" href="/products.html" data-bs-toggle="dropdown" aria-expanded="false">       
-          <i class="fas fa-table"></i> Orders</a>
-        <ul class="dropdown-menu ">
-          <li><a class="dropdown-item" href="#">Order 1</a></li>
-          <li><a class="dropdown-item" href="#">Order 2</a></li>
-          <li><a class="dropdown-item" href="#">Order 3</a></li>
-        </ul>
+      <div class="nav-item m-2">
+        <a class="nav-link text-white text-muted" title="Orders" href="/orders.html"> <i class="fas fa-table fa-2x"></i></a> 
       </div>
 
-      <div class=" dropend m-2">
-        <a class="nav-link text-white text-muted dropdown-toggle" href="/report.html" data-bs-toggle="dropdown" aria-expanded="false">       
-          <i class="fas fa-chart-area"></i> Reports</a>
-        <ul class="dropdown-menu ">
-          <li><a class="dropdown-item" href="#">Report 1</a></li>
-          <li><a class="dropdown-item" href="#">Report 2</a></li>
-          <li><a class="dropdown-item" href="#">Report 3</a></li>
-        </ul>
+      <div class="nav-item m-2">
+        <a class="nav-link text-white text-muted" title="Report" href="/report.html"><i class="fas fa-chart-area fa-2x"></i></a>
       </div>
       
-     
+      
       <div class="nav-item m-2">
-          <a class="nav-link text-white text-muted" href="#"><i class="fas fa-users"></i> Customers</a>
+          <a class="nav-link text-white text-muted" title="Customers" href="/customers.html"><i class="fas fa-users fa-2x"></i> </a>
         </div>
-        <div class="nav-item text-white bg-purple p-2 "> Logged in as: <br> nrt admin"
-          
-        </div>
+       
+       
     </ul>
-   
+           
    
 
 
     <div class="container-fluid ">
-        <div class="row ml-5 mt-3"><h1>Products</h1>
+        <div class="row ml-5  mt-5 pt-4 "><h1>Products</h1>
             <p class="text-muted"> <a href="/index.html">Dashboard</a> / Products</p>
             
 </div>
