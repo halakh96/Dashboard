@@ -57,29 +57,28 @@ const products = [
   },
 ];
 
-
-
 document.getElementById('productsPage').innerHTML = products.map(product => 
-` <div class="container-fluid ">
-<div class="row mt-5 ">
-              <div class="col-12 d-flex justify-content-center">
-                <div class="card w-75">
-                  <div class="card-body d-flex">
-                 
-                       <img class="w-25 m-2"src="${product.image}" alt="">
-                       
-                       <div class=" w-50 m-2">
-                       <h4>${product.name}</h4>
-                       <p>${product.description}</p>
-                      </div>
-                       <div class=" text-center w-25 ">
-                        <h5>${product.price}SAR </h5>
-                        <p class="text-success">${product.status}</p>
-                      <a href="#" class="btn bg-purple input-group mt-2">Details</a>
-                      <a href="#" class="btn bg-pink input-group mt-2">Details</a>
-                    </div>
-                  </div>
-              </div>
-            </div>`
-  
+ 
+  `<div class="container-fluid ">
+    <div class="card w-75 mt-4 mx-auto">
+    <div class="row m-2">
+<div class="col-3"><img class="w-100 h-100 "src="${product.image}" alt=""></img>
+</div>
+<div class="col-6">
+    <h4>${product.name}</h4>
+    <p>${product.description}</p>
+</div>
+<div class="col-3 ">
+     <h5>${product.price}SAR </h5>
+    <p class="text-success">${product.status}</p>
+  <a href="#" class="btn bg-purple w-100 mt-2">Details</a>
+  <a href="#" class="btn bg-pink w-100 mt-2">Details</a>
+</div>
+    </div>
+</div>
+</div>`
   ).join('')
+  
+
+
+  
