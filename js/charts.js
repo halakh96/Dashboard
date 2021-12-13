@@ -88,15 +88,8 @@ var myPieChart = new Chart(citiesChart, {
           }]
       },
     options: {
-      maintainAspectRatio:false,
-      scales: {
-        xAxes: [{ 
-           display: false,
-        }],
-        yAxes: [{
-           display: false,
-        }],
-      }
+      maintainAspectRatio:false
+    
     },
   });
 

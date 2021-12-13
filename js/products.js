@@ -59,23 +59,21 @@ const products = [
 
 document.getElementById('productsPage').innerHTML = products.map(product => 
  
-  `<div class="container-fluid ">
-    <div class="card w-75 mt-4 mx-auto">
+  `<div class="card w-75 mt-4 mx-auto">
     <div class="row m-2">
-<div class="col-3"><img class="w-100 h-100 "src="${product.image}" alt=""></img>
+<div class="col-md-3 col-12"><img class="w-100 h-100 "src="${product.image}" alt=""></img>
 </div>
-<div class="col-6">
+<div class="col-md-6 col-12 mt-2">
     <h4>${product.name}</h4>
     <p>${product.description}</p>
 </div>
-<div class="col-3 ">
+<div class="col-md-3 col-12">
      <h5>${product.price}SAR </h5>
     <p class="text-success">${product.status}</p>
   <a href="#" class="btn bg-purple w-100 mt-2">Details</a>
   <a href="#" class="btn bg-pink w-100 mt-2">Details</a>
 </div>
     </div>
-</div>
 </div>`
   ).join('')
   
