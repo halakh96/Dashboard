@@ -5,7 +5,7 @@
 //dataTable
 $(document).ready(function () {
 $('#myTable').DataTable({
-    "ajax": '/data.json',
+    "ajax": 'data.json',
     "columns": [
         { "data": 'name' },
         { "data": 'address' },
